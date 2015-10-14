@@ -1,5 +1,5 @@
 # Backbone examples
-Simple applications wrote in backbone
+Simple applications written in backbone
 
 ## Music player
 Application modeled on spotify based on `localStorage`<br>
