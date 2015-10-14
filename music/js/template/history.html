@@ -1,0 +1,11 @@
+<h2>Recently listened</h2>
+<ul class="recently">
+    {{ _.each(list, function(track){ }}
+        <li>
+            <a href="#" class="play" data-id="{{=track.id}}">{{=track.title}}</a>
+            <em>{{=track.date}}</em>
+            <a href="#" data-id="{{=track.id}}" class="delete"><span class="glyphicon glyphicon-remove"></span></a>
+        </li>
+    {{ }); }}
+    <li></li>
+</ul>

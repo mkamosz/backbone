@@ -1,0 +1,72 @@
+body{font-size:12px; overflow-y: scroll; background: #333; color:#fff; font-family: 'Open Sans', sans-serif;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+
+a{color:#00aeef;}
+a:hover{text-decoration: none; color:#fff;}
+h2{font-size:18px;padding-bottom:10px;border-bottom:1px solid #666;}
+
+ul{margin:0; padding:0;}
+ul li{padding:0; list-style: none;}
+
+.container{margin:0 auto;width:100%;}
+.form-control{height:29px;}
+select.form-control{padding-top:4px;}
+.form-group label {font-weight: normal}
+.badge{padding:3px 5px; background: #333;}
+
+::-webkit-input-placeholder{color:#999;font-size:12px; line-height: 1.6em;}
+:-moz-placeholder{color:#999;font-size:12px; line-height: 1.6em;}
+::-moz-placeholder{color:#999;font-size:12px; line-height: 1.6em;}
+:-ms-input-placeholder{color:#999;font-size:12px; line-height: 1.6em;}
+input:-moz-placeholder{color:#999;font-size:12px; line-height: 1.6em;}
+
+#page{opacity:0;}
+.active #page{opacity:1;visibility: visible;}
+
+#loginForm{opacity:0; transition: all 1s; position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/bg.jpg") no-repeat 0 0 / 100%}
+#loginForm form{ color:#ccc;text-shadow: 1px 1px 2px #333;text-align:center; width:300px; margin:-100px auto 0; position: absolute; top:50%; left:0; right:0;}
+#loginForm form h3{margin:0 0 20px 0;}
+#loginForm form .fail{color:#ff0000; font-size:11px; transition: all .5s; opacity:0;}
+#loginForm form.error .fail{opacity:1;}
+.in #loginForm{opacity:1;}
+
+#header{background: #2f2f2f;border-bottom:1px solid #666; padding-bottom: 10px; position: fixed; z-index: 1; width: 100%}
+#header h1{text-align: center; font-size:13px; margin:5px 0 2px 0;}
+#header .search:before{font-family: 'Glyphicons Halflings'; content: "\e003"; width:20px; height:20px; color:#333; position: absolute; top:7px; left:25px;}
+#header .search input{padding-left:30px;}
+#header .user{line-height: 1.6em; padding-top:8px; text-align: right; color:#999;}
+
+#section{width:100%;position: fixed; padding:62px 0 40px 0; height: 100%;box-sizing:border-box;}
+#section .icons-menu{padding:10px 5px;}
+#section .icons-menu li{margin-bottom:10px;}
+#section .icons-menu span{font-size:13px;}
+#section .icons-menu a{font-size:13px; padding-left:5px;}
+#section .icons-menu .badge{font-size:10px; font-weight: normal;}
+#section .icons-menu ul{display: none; margin:10px 0 0 22px;}
+#section .icons-menu ul li{margin-bottom:5px;}
+#section > .container{width:100%;}
+#section .container,
+#section .row{height: 100%}
+#section .left{background: #444; height: 100%;padding-right:0;}
+#section .menu{ padding:0; padding-left:0px;}
+#section .player{overflow:hidden;height: 100%;background: #444;}
+#section table{width:100%;border-top:1px solid #666;}
+#section table tr th{white-space:nowrap; font-weight: bold; text-align: left;padding:5px 10px; border-bottom:1px solid #666;background: #444;}
+#section table tr td{text-align: left;padding:5px 10px;border-bottom:1px solid #666;}
+#section table tr td:first-child{width:30px;font-size:16px;}
+#section table tr td.favorite{font-size:16px;}
+#section table tr:hover td{background: #444;}
+#section .playlist{min-height: 300px;}
+#section .playlist h2{margin-bottom:20px;}
+#section .recently{margin-lef:10px;}
+#section .recently li{margin-bottom:5px; padding-right:20px; position: relative;}
+#section .recently li .delete{position: absolute; top:5px; right: 0;}
+#section .recently em{display: block; font-size:10px; color:#ccc;}
+#section .middle{position: relative;height: 100%;padding-right:0;}
+#section .middle .mCSB_inside > .mCSB_container{padding-bottom:60px;}
+#section .middle .form{padding:0 20px 20px;position: absolute;top:0; width:100%; height:100%; right:-100%; background:#333; transition: all .8s;}
+#section .middle .form .closeForm{color:#fff; font-size:20px; line-height: 20px; position: absolute; top:20px; right: 20px;}
+#section .middle .form .loader{display:none;}
+#section .middle .form .error{color:red; margin:0 0 10px 0; display: none}
+#section .middle.active .form{right:0;}
+
+#footer{ z-index:3; background: #2f2f2f;border-top:1px solid #666; color:#666; line-height: 3.5em; text-align: center; font-size:12px; height:40px; width: 100%; position:fixed; bottom:0;}

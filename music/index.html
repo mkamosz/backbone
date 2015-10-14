@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Music list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/skin/pink.flag/jplayer.pink.flag.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body id="music">
+    <div id="page">
+        <header id="header">
+            <div id="search">
+                <h1>Music player</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 search">
+
+                        </div>
+                        <div class="col-md-1 add">
+
+                        </div>
+                        <div class="col-md-8 user">
+                            user: <a href="mailto:michal@kamosz.pl">demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 left">
+                        <h2>Choice</h2>
+
+                        <ul class="icons-menu">
+
+                        </ul>
+
+                        <div class="history">
+
+                        </div>
+                    </div>
+                    <div class="col-md-8 middle">
+                        <div class="playlist">
+
+                        </div>
+                        <div class="form">
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 player">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <p>author: <a href="mailto:michal@kamosz.pl">michal@kamosz.pl</a></p>
+        </footer>
+    </div>
+    <div id="loginForm">
+
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/underscore.js"></script>
+    <script src="js/vendor/backbone.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/backbone-localstorage.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/jquery.mCustomScrollbar.js"></script>
+    <script src="js/jquery.jplayer.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/tracksList/tracksList.js"></script>
+    <script src="js/player/player.js"></script>
+    <script src="js/menu/menu.js"></script>
+    <script src="js/search/search.js"></script>
+    <script src="js/history/history.js"></script>
+    <script src="js/track/track.js"></script>
+
+    <script>
+        app.start();
+    </script>
+</body>
+</html>

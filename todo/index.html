@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>To Do</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div id="page" class="container">
+
+        <section id="todoapp">
+
+        </section>
+    </div>
+
+    <div id="loginForm">
+        <form action="#" method="post" onsubmit="return false;">
+            <fieldset>
+                <div class="col-md-11">
+                    <h3>ToDo list</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="login" name="login" value="demo" placeholder="login">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="password" name="password" value="demo" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-default submit">Login</button>
+                    </div>
+                    <span class="fail">Wrong login or password try demo/demo</span>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <script type="text/template" id="todo-field">
+        <div class="form-group">
+            <h1>To do</h1>
+            <input id="new-todo" class="form-control" placeholder="">
+        </div>
+        <hr/>
+    </script>
+
+    <script type="text/template" id="todo-list">
+        <ul id="list" class="list-group form-inline">
+            {{ _.each(toDoList, function(item){ }}
+                <li class="list-group-item clearfix {{= item.complete ? 'done' : ''}} " data-id="{{= item.id}}">
+
+                    <div class="checkbox pull-left">
+                        <label>
+                            <input type="checkbox" class="checkboxInput" {{= item.complete ? 'checked' : ''}} />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control editField"  name="title" value="{{= item.title}}"/>
+                    </div>
+                    <span class="pull-left">{{= item.title}}</span>
+                    <span class="glyphicon glyphicon-remove pull-right"></span>
+                </li>
+            {{ }); }}
+            <li class="list-group-item disabled">Cases to do: <span class="badge">0</span></li>
+        </ul>
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.14/backbone.localStorage-min.js" type="text/javascript"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

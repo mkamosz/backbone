@@ -1,0 +1,38 @@
+{
+    "pl": {
+        "lang_add_person": "Dodaj osobę",
+            "lang_search_contact": "Szukaj kontaktu",
+            "lang_form_name": "Imie",
+            "lang_form_surname": "Nazwisko",
+            "lang_form_email": "Email",
+            "lang_form_phone": "Telefon",
+            "lang_form_photo": "Podaj link do zdjęcia",
+            "lang_form_age": "Wiek",
+            "lang_form_category": "Rodzaj kontaktu",
+            "lang_form_error": "Wypełnij wszystkie pola",
+            "lang_save": "Zapisz",
+            "lang_cancel": "Anuluj",
+            "lang_edit": "Edytuj",
+            "lang_delete": "Usuń",
+            "lang_sort_title": "Sortowanie",
+            "lang_category_all": "Wszystkie"
+    },
+    "en": {
+        "lang_add_person": "Add person",
+            "lang_search_contact": "Search contact",
+            "lang_form_name": "Name",
+            "lang_form_surname": "Surname",
+            "lang_form_email": "Email",
+            "lang_form_phone": "Phone",
+            "lang_form_photo": "Url to photo",
+            "lang_form_age": "Age",
+            "lang_form_category": "Category type",
+            "lang_form_error": "Please fill in all fields",
+            "lang_save": "Save",
+            "lang_cancel": "Cancel",
+            "lang_edit": "Edit",
+            "lang_delete": "Delete",
+            "lang_sort_title": "Sorting",
+            "lang_category_all": "All"
+    }
+}

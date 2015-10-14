@@ -1,0 +1,40 @@
+body{font-size:12px; overflow-y: scroll;}
+
+a{color:#00aeef;}
+a:hover{text-decoration: none; color:#000;}
+
+ul{margin:0; padding:0;}
+ul li{padding:0; list-style: none;}
+
+.container{margin:0 auto;}
+
+#page{opacity:0;}
+.active #page{opacity:1;}
+
+#loginForm{opacity:0; transition: all 1s; position: absolute; top:0; left:0; width:100%; height:100%; background: url("../img/bg.jpg") no-repeat 0 0 / 100%}
+#loginForm form{ color:#ccc;text-shadow: 1px 1px 2px #333;text-align:center; width:300px; margin:-100px auto 0; position: absolute; top:50%; left:0; right:0;}
+#loginForm form h3{margin:0 0 20px 0;}
+#loginForm form .fail{color:#ff0000; font-size:11px; transition: all .5s; opacity:0;}
+#loginForm form.error .fail{opacity:1;}
+.in #loginForm{opacity:1;}
+
+.thumbnail{min-height:265px; position: relative; word-wrap: break-word;}
+.thumbnail .buttons{position: absolute;bottom:0;}
+.thumbnail img{height:85px;}
+
+#header{background:#fff; left:0; width:100%;position:fixed; top:0; z-index:2; border-bottom: 1px solid #ccc; padding:0 0 10px 0; margin:0;}
+#header h1{margin:20px 0 0 0; width:200px;}
+#header img{width:100%;}
+#header .language ul{list-style: none; text-align: right; margin:10px 0 5px 0;}
+#header .language ul li{display: inline-block}
+#header .language ul li a{color:#999;}
+
+#content{margin-bottom:40px;position: relative; z-index: 1; margin-top:100px;}
+#content .sort{margin:0 0 20px 0; text-align: right;}
+#content .list-group-item a{display: block;}
+#content .list-group-item:hover,
+#content .list-group-item.active{background: #f6f6f6; border:1px solid #ddd}
+
+form .error{color:red; margin:0 0 10px 0; display: none}
+
+#footer{ z-index:3; background: #f6f6f6; color:#666; line-height: 3.5em; text-align: center; font-size:12px; height:40px; width: 100%; position:fixed; bottom:0;}

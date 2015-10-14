@@ -1,0 +1,40 @@
+<h2>{{= txt.title}}</h2>
+<table>
+    <thead>
+    <tr>
+        <th>&nbsp;</th>
+        <th width="160">Title</th>
+        <th width="160">Author</th>
+        <th>Time</th>
+        <th>Date added</th>
+        <th>Category</th>
+        <th>Favorite</th>
+        <th>&nbsp;</th>
+    </tr>
+    </thead>
+    <tbody>
+        {{ _.each(list, function(track){ }}
+            <tr>
+                <td><a class="play-list-play" data-title="{{=track.title}}" data-id="{{=track.id}}" href="{{=track.url}}"><span class="glyphicon glyphicon-play"></span></a></td>
+                <td>{{=track.title}}</td>
+                <td>{{=track.author}}</td>
+                <td>{{=track.time}}</td>
+                <td>{{=track.date}}</td>
+                <td>{{=track.category}}</td>
+                <td class="favorite"><a href="#" data-id="{{=track.id}}"><span class="glyphicon {{= track.favorite == 1 ? 'glyphicon-star' : 'glyphicon-star-empty'}} "></span></a></td>
+                <td class="action">
+                    <!-- Small button group -->
+                    <div class="btn-group pull-right">
+                        <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" class="delete" data-id="{{=track.id}}">Delete</a></li>
+                            <li><a href="#" class="edit" data-id="{{=track.id}}">Edit</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        {{ }); }}
+    </tbody>
+</table>

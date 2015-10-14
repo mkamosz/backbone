@@ -1,0 +1,18 @@
+<ul class="row">
+    {{ _.each(persons, function(person){ }}
+        <li class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="{{=person.photo}}" alt="{{=person.name}} {{=person.surname}}">
+                <div class="caption">
+                    <h4>{{=person.name}} {{=person.surname}}</h4>
+                    <p>
+                        {{=lang.lang_form_email}}: <a href="mailto:{{=person.email}}">{{=person.email}}</a><br>
+                        {{=lang.lang_form_phone}}: {{=person.phone}}<br>
+                        {{=lang.lang_form_age}}: {{=person.age}}
+                    </p>
+                    <p class="buttons"><a href="#/edit/{{=person.id}}" class="btn btn-default editUser">{{=lang.lang_edit}}</a> <a href="#" class="btn btn-danger delete" data-id="{{=person.id}}" role="button">{{=lang.lang_delete}}</a></p>
+                </div>
+            </div>
+        </li>
+    {{ }); }}
+</ul>

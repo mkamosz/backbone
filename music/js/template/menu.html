@@ -1,0 +1,31 @@
+<li class="all">
+    <span class="glyphicon glyphicon-music"></span>
+    <a href="#">All tracks</a>
+</li>
+<li class="favorite">
+    <span class="glyphicon glyphicon-star"></span>
+    <a href="#">Favorite</a>
+</li>
+<li class="accordion">
+    <span class="glyphicon glyphicon-align-justify"></span>
+    <a href="#">Category</a>
+    <ul class="category">
+        {{ _.each(categories, function(category){ }}
+        <li>
+            - <a href="#" data-category="{{= category.title }}"><span class="badge pull-right">{{= category.counter }}</span>
+                {{= category.title }}</a>
+        </li>
+        {{ }); }}
+    </ul>
+</li>
+<li class="accordion" style="display:none;">
+    <span class="glyphicon glyphicon-list"></span>
+    <a href="#">PlayList</a>
+    <ul>
+        <li><a href="#">PlayList 1</a></li>
+        <li><a href="#">PlayList 2</a></li>
+        <li><a href="#">PlayList 3</a></li>
+        <li><a href="#">PlayList 4</a></li>
+        <li><a href="#">PlayList 5</a></li>
+    </ul>
+</li>

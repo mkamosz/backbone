@@ -1,0 +1,12 @@
+<ul class="list-group">
+    <li class="list-group-item active">
+        <a href="#" data-category="all"><span class="badge pull-right">{{=counterAll}}</span>
+            {{=lang.lang_category_all}}</a>
+    </li>
+    {{ _.each(categories, function(category){ }}
+        <li class="list-group-item">
+            <a href="#" data-category="{{= category.title }}"><span class="badge pull-right">{{= category.counter }}</span>
+            {{= category.title }}</a>
+        </li>
+    {{ }); }}
+</ul>

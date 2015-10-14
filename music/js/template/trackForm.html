@@ -1,0 +1,67 @@
+<form class="user-form" onsubmit="return false;" data-id="{{= music ? music.id : ''}}">
+    <h2><span>{{= typeof music !== "undefined" ? 'Edit track' : 'Add track'}}</span><a href="#" class="closeForm"><span class="glyphicon glyphicon-remove"></span></a></h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="field-title">Title</label>
+                <input type="text" class="form-control" id="field-title" name="title" value="{{= music ? music.title : ''}}">
+            </div>
+            <div class="form-group">
+                <label for="field-author">Author</label>
+                <input type="text" class="form-control" id="field-author" name="author" value="{{= music ? music.author : ''}}">
+            </div>
+            <div class="form-group">
+                <label for="field-url">Url to mp3 file</label>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" class="form-control" id="field-url" name="url" value="{{= music ? music.url : ''}}">
+                        <button type="button" class="btn btn-primary btn-sm random" style="margin-top:5px;">Random MP3</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="field-time">Time</label>
+                <input type="text" class="form-control" id="field-time" name="time" value="{{= music ? music.time : ''}}">
+            </div>
+            <div class="form-group">
+                <label for="field-category">Category</label>
+                <select class="form-control" id="field-category" name="category">
+                    <option {{= music ? (music.category == '' ? 'selected' : 'false') : 'false'}} value="">Music type</option>
+                    <option {{= music ? (music.category == 'Alternative Music' ? 'selected' : 'false') : 'false'}} value="Alternative Music">Alternative Music</option>
+                    <option {{= music ? (music.category == 'Blues' ? 'selected' : 'false') : 'false'}} value="Blues">Blues</option>
+                    <option {{= music ? (music.category == 'Classical Music' ? 'selected' : 'false') : 'false'}} value="Classical Music">Classical Music</option>
+                    <option {{= music ? (music.category == 'Country Music' ? 'selected' : 'false') : 'false'}} value="Country Music">Country Music</option>
+                    <option {{= music ? (music.category == 'Dance Music' ? 'selected' : 'false') : 'false'}} value="Dance Music">Dance Music</option>
+                    <option {{= music ? (music.category == 'Easy Listening' ? 'selected' : 'false') : 'false'}} value="Easy Listening">Easy Listening</option>
+                    <option {{= music ? (music.category == 'Electronic Music' ? 'selected' : 'false') : 'false'}} value="Electronic Music">Electronic Music</option>
+                    <option {{= music ? (music.category == 'European Music (Folk / Pop)' ? 'selected' : 'false') : 'false'}} value="European Music (Folk / Pop)">European Music (Folk / Pop)</option>
+                    <option {{= music ? (music.category == 'Hip Hop / Rap' ? 'selected' : 'false') : 'false'}} value="Hip Hop / Rap">Hip Hop / Rap</option>
+                    <option {{= music ? (music.category == 'Indie Pop' ? 'selected' : 'false') : 'false'}} value="Indie Pop">Indie Pop</option>
+                    <option {{= music ? (music.category == 'Inspirational' ? 'selected' : 'false') : 'false'}} value="Inspirational">Inspirational</option>
+                    <option {{= music ? (music.category == 'Asian Pop' ? 'selected' : 'false') : 'false'}} value="Asian Pop">Asian Pop</option>
+                    <option {{= music ? (music.category == 'Jazz' ? 'selected' : 'false') : 'false'}} value="Jazz">Jazz</option>
+                    <option {{= music ? (music.category == 'Latin Music' ? 'selected' : 'false') : 'false'}} value="Latin Music">Latin Music</option>
+                    <option {{= music ? (music.category == 'New Age' ? 'selected' : 'false') : 'false'}} value="New Age">New Age</option>
+                    <option {{= music ? (music.category == 'Opera' ? 'selected' : 'false') : 'false'}} value="Opera">Opera</option>
+                    <option {{= music ? (music.category == 'Pop' ? 'selected' : 'false') : 'false'}} value="Pop">Pop</option>
+                    <option {{= music ? (music.category == 'R&B / Soul' ? 'selected' : 'false') : 'false'}} value="R&B / Soul">R&B / Soul</option>
+                    <option {{= music ? (music.category == 'Reggae' ? 'selected' : 'false') : 'false'}} value="Reggae">Reggae</option>
+                    <option {{= music ? (music.category == 'Rock' ? 'selected' : 'false') : 'false'}} value="Rock">Rock</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="error pull-right">Please fill in all fields</span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit pull-right">Save</button>
+            <img src="img/loader.gif" class="loader pull-right"/>
+        </div>
+    </div>
+</form>
