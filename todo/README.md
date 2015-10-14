@@ -9,7 +9,7 @@ Simple application to remember what you have to do
 * on right bottom you have counter on case to do
 
 ## TODO
----
+nothing for now
 
 
 
