@@ -1,15 +1,20 @@
-# Backbone address book
-Simple application to remember all your contact
+# Backbone music player
+My the biggest application wrote in backbone 
 
 ## How does it work
-* you can add new contact
-* you can search in contacts
-* you can changle language for PL or EN
-* you can sort by (name,email,age) or you can select one of a category
-* you can edit or delete contact
+* you can add url for mp3 track (when you add track you can use random solution for add url for some random music)
+* you can search on added tracks
+* three categories (all tracks, favorite, category [category of added tracks])
+* recently listened list - sorted by last tracks 
+* in main section you can play track, edit or delete or add for favorite
+
+## Link for application
+[here](http://kamosz.pl/backbone/music/)
 
 ## TODO
-fix some small bugs - when you click on left menu (categories) event for delete person is doubles.
+* fix some small bugs - sometimes player not start when you click fast
+
+
 
 
 

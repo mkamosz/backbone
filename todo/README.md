@@ -8,6 +8,9 @@ Simple application to remember what you have to do
 * when you click double you can edit item
 * on right bottom you have counter on case to do
 
+## Link for application
+[here](http://kamosz.pl/backbone/todo/)
+
 ## TODO
 nothing for now
 
